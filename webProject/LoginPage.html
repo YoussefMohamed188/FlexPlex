@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Login to your FlixPlex account to book movie tickets">
+    <meta name="keywords" content="cinema, login, movie tickets, account">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | FlixPlex</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="image/icons8-f-50.png" type="image/x-icon" >
+
+</head>
+<body>
+
+    <nav class="navigation-bar">
+        <div class="navigation-bar__content">
+            <div class="logo">
+                <span class="nowrap">
+                    <a href="home.html" class="logo-icon">F</a>
+                    <a href="home.html" class="logo-word">lixPlex</a>
+                </span>
+            </div>
+            <div class="back-to-home">
+                <img src="image/icons8-home-50.png" alt="back to home" title="Back to home" id="back-to-home" width="30">
+            </div>
+        </div>
+    </nav> 
+    
+    <div class="main">
+        <div class="wrapper">
+            <form action="" id="loginForm">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="email" placeholder="Email Address" required id="email">
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required id="password">
+                    <i class='bx bxs-lock-alt' id="togglePassword"></i>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="login-btn" id="loginBtn">LOGIN</button>
+                <div class="register-link">
+                    <p>Don't have an account? <a href="signUp.html">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="JS/login.js"></script>
+</body>
+</html>

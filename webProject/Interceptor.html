@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interceptor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icons8-f-50.png" type="image/x-icon" >
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/trailer.css">
+</head>
+
+<body> 
+    <div class="movie-trailer__container">
+
+        <!-- background -->
+        <div class="video-background">
+            <video autoplay loop playsinline>
+                <source src="videos/Interceptor.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+
+        <!-- navigation -->
+        <nav class="navigation-bar">
+            <div class="navigation-bar__content">
+                <div class="logo">
+                    <span class="nowrap">
+                        <a href="home.html" class="logo-icon">F</a>
+                        <a href="home.html" class="logo-word">lixPlex</a>
+                    </span>
+                </div>
+                <ul class="navigation-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html#movies">Movies</a></li>
+                    <li><a href="myBookings.html"><span class="nowrap">My Bookings</span></a></li>
+                    <li><a href="home.html#footer"><span class="nowrap">About Us</span></a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <span class=" nowrap">
+                        <button class="btn login-btn" id="login-btn">Login</button>
+                        <button class="btn signUp-btn" id="signUp-btn"><span class="nowrap">Sign up</span></button>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- content -->
+        <div class="content">
+            <div class="about-movie">
+                <span>⭐7.5/10 &nbsp;| &nbsp;Duration: 1h 35m &nbsp;| &nbsp;Action | Crime</span>
+            </div>
+            <h1 class="movie-name">INTERCEPTOR</h1>
+
+
+            <p class="movie-description-trailerPage">
+                Meet the world's last defense. One Army captain must use her years of tactical training and military expertise 
+                when a simultaneous coordinated attack threatens the remote missile interceptor station.
+            </p>
+
+            <ul class="movieDetails">
+                <li>Release date: May 26, 2022 (Australia)</li>
+                <li>Language: English</li>
+                <li>Subtitle(s): Arabic</li>
+            </ul>
+
+            <div class="trailer-buttons">
+                <button type="button" id="interceptor-tailer-btn">Full trailer</button>
+                <button type="button" id="interceptor-book-now-form-trailer-btn" data-movie="Interceptor">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+    <script src="JS/interceptor.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*** || RESET || ***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--FF-MAIN);
+}
+::selection {
+    color: var(--CLR-FONT);
+    background: var(--CLR-SECONDARY-TRANSPARENT);
+}
+body {
+    background: var(--CLR-BG);
+    background-attachment: fixed;
+    line-height: 1.5;
+    word-spacing: 1.25px;
+    min-height: 100dvh;
+}
+
+/* || VARIABLES ||*/
+
+:root {
+    /*colors*/
+    --CLR-TRANSPARENT: rgba(255, 255, 255, 0.08);
+    --CLR-TRANSPARENT-2: rgba(255, 255, 255, 0.5);
+
+    --CLR-MAIN: rgb(0, 10, 33);
+    --CLR-MAIN-TRANSPARENT: rgba(5, 25, 59, 0.91);
+
+    --CLR-SECONDARY: #00b7ffc6;
+    --CLR-SECONDARY-TRANSPARENT: rgba(0, 183, 255, 0.652);
+
+    --CLR-FONT: white;
+    --CLR-FONT-LIGHT: rgba(255, 255, 255, 0.641);
+    --CLR-FONT-LIGHTER: rgba(255, 255, 255, 0.866);
+    --CLR-FONT-TRANSPARENT: rgba(255, 255, 255, 0.432); 
+
+    /*gradients*/
+    --CLR-BG: linear-gradient(to bottom, var(--CLR-MAIN), var(--CLR-MAIN-TRANSPARENT), var(--CLR-MAIN));
+    --CLR-NAVBAR: linear-gradient(to right, #ffffff17, #ffffff27, #ffffff17);
+    --CLR-TOP-MOVIES: linear-gradient(to right, var(--CLR-SECONDARY), #81d5f7a6, var(--CLR-SECONDARY));
+
+    /*fonts families*/
+    --FF-MAIN: "Fira Sans", sans-serif;
+    --FF-SECONDARY: "Roboto", sans-serif;
+
+    /*shadow*/
+    --SHADOW: 0px 0px 30px black;
+    --SHADOW-SECONDARY: 0px 0px 30px var(--CLR-SECONDARY);
+    --SHADOW-DOWN-BLACK: 0 5px 5px rgba(0, 0, 0, 0.5);
+
+    --TXT-SHADOW-FONT-CLR: -4px 4px 5px var(--CLR-FONT-TRANSPARENT);
+    --TXT-SHADOW-SECONDARY: -5px 5px 5px var(--CLR-SECONDARY);
+    --TXT-SHADOW-SECONDARY-Transparent: -5px 5px 5px var(--CLR-SECONDARY-TRANSPARENT);
+}
+
+/*** || FONTS || ***/
+:root {
+  --CLR-BG: linear-gradient(to bottom, var(--CLR-MAIN), var(--CLR-MAIN-TRANSPARENT), var(--CLR-MAIN));
+  --CLR-FONT: white;
+  --CLR-FONT-LIGHT: rgba(255, 255, 255, 0.641);
+
+}
+
+
+.light-mode {
+  --CLR-MAIN: rgb(240, 240, 240);
+  --CLR-MAIN-TRANSPARENT: rgba(240, 240, 240, 0.91);
+  --CLR-MAIN-TRANSPARENT-2: rgba(240, 240, 240, 0.83);
+  --CLR-MAIN-TRANSPARENT-3: rgba(240, 240, 240, 0.314);
+
+  --CLR-FONT: #000;
+  --CLR-FONT-LIGHT: rgba(10, 60, 107, 0.6);
+  --CLR-BG: linear-gradient(to bottom, var(--CLR-MAIN), #456bb6);
+ 
+}
+
+body {
+    font-family: var(--FF-SECONDARY);
+    font-size: 0.813em;
+    color: var(--CLR-FONT);
+}
+
+h1 {
+    font-family: var(--FF-MAIN);
+    font-size: 3.5em;
+    text-transform: capitalize;
+}
+
+p {
+    font-family: var(--FF-SECONDARY);
+}
+
+.logo .logo-icon {
+    display: inline;
+    padding: 0;
+    font-family: var(--FF-MAIN);
+    color: var(--CLR-SECONDARY);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.logo a {
+    color: var(--CLR-FONT);
+    font-size: 1.75em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+.login-link {
+    text-decoration: none;
+    color: var(--CLR-SECONDARY);
+}
+.login-link:hover{
+    text-decoration: underline;
+}
+
+/*** || COMPONENTS || ***/
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--FF-SECONDARY);
+    font-weight: 500;
+    font-size: 1.25em;
+    color: var(--CLR-FONT);
+    background-color: var(--CLR-SECONDARY);
+    border: none;
+    width: 60%;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: var(--SHADOW-DOWN-BLACK);
+    padding: 0.5em 2em;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+button:hover {
+    background-color: var(--CLR-SECONDARY-TRANSPARENT);
+}
+
+
+button:active {
+    transform: scale(0.9);
+    box-shadow: none;
+}
+
+/*** || GENARAL STYLES || ***/
+
+/*navigation bar*/
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-bar__content {
+    position: fixed;
+    margin-top: 100px;
+    width: 100%;
+    padding:  1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navigation-bar .navigation-items>*,
+.navigation-bar .logo>* {
+    display: inline;
+}
+
+.back-to-home img{
+    transition: transform 160ms ease;
+}
+
+.back-to-home img:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 5px var(--CLR-SECONDARY));
+    transform: scale(1.1);
+}
+/*main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    
+}
+.signUp-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--SHADOW);
+    background: var(--CLR-TRANSPARENT);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    width: min(400px, 100%);
+    height: min(480px, 100%);
+}
+.signUp-box__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding:40px;
+    gap: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+form > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.input-box{
+    margin-bottom: 10px;
+}
+
+form label {
+    flex-shrink: 0;
+    height: 40px;
+    width: 40px;
+    background: var(--CLR-SECONDARY);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+
+form input {
+    flex-grow: 1;
+    min-width: 0;
+    height: 40px;
+    padding: 1em;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid transparent;
+    background: var(--CLR-FONT);
+    transition: 260ms ease;
+    color: var(--CLR-MAIN);
+}
+
+form input:hover{
+    border: 2px solid var(--CLR-SECONDARY-TRANSPARENT);
+    border-left: 2px solid transparent;
+}
+form input:focus{
+    outline: none;
+    border-color: var(--CLR-SECONDARY);
+    border-left: 2px solid transparent;
+    background: var(--CLR-FONT-LIGHT);
+    color: var(--CLR-MAIN);
+}
+
+div:has(input:focus) > label{
+    background-color: var(--CLR-SECONDARY-TRANSPARENT);
+}
+
+form input::placeholder{
+    color: var(--CLR-MAIN);
+    opacity: 0.5;
+}
+form button {
+    margin: 1rem;
+    border: none;
+}
+
+/*** || UTILITY CLASSES || ***/
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/*** || MEDIA QUIRIES || ***/
+
+@media screen and (max-width: 450px){
+    .signUp-box {
+        background: none;
+        box-shadow: none;
+    }
+}

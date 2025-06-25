@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up | FlixPlex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icons8-f-50.png" type="image/x-icon">
+    <link rel="icon" href="image/icons8-f-50.png" type="image/x-icon" >
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/signUp.css">
+</head>
+
+    <body>
+        <nav class="navigation-bar">
+            <div class="navigation-bar__content">
+                <div class="logo">
+                    <span class="nowrap">
+                        <a href="home.html" class="logo-icon">F</a>
+                        <a href="home.html" class="logo-word">lixPlex</a>
+                    </span>
+                </div>
+                <div class="back-to-home">
+                    <img src="image/icons8-home-50.png" alt="back to home" title="Back to home" id="back-to-home" width="30">
+                </div>
+            </div>
+        </nav>      
+        <main >
+            <div class="signUp-box">
+                <div class="signUp-box__content">
+                    <h1>sign up</h1>
+                    <form action="" id="signUp-form">
+                        <div class="input-box">
+                            <label for="name-input">
+                                <img src="image/icons8-person-30.png" alt="icon" width="20">
+                            </label>
+                            <input  type="text" name="name" id="name-input" placeholder="Name" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="tel-input">
+                                <img src="image/icons8-phone-50.png" alt="icon" width="20">
+                            </label>
+                            <input  type="text" pattern="[0-9]*" inputmode="numeric" name="name" id="tel-input" placeholder="Phone number" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="email-input">
+                                <span class="email-icon">
+                                    <img src="image/icons8-email-24.png" alt="icon" width="20">
+                                </span>
+                            </label>
+                            <input  type="email" name="email" id="email-input" placeholder="Email" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="password-input">
+                                <img src="image/icons8-lock-50.png" alt="icon" width="20">
+                            </label>
+                            <input  type="password" name="password" id="password-input" placeholder="Password" required>
+                        </div>
+                        <div class="button-container">
+                            <button type="submit">Signup</button>
+                        </div>
+                        <div class="login-register">
+                            <p>
+                                Already have an account?
+                                <a href="LoginPage.html" class="login-link">login</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="socialMedia">
+                <a class="socialMediaButton" href="https://www.facebook.com" target="_blank"><img src="image/icons8-facebook-24.png" alt="facebook logo"></a>
+                <a class="socialMediaButton" href="https://www.instagram.com" target="_blank"><img src="image/icons8-instagram-24.png" alt="instagram icon"></a>
+                <a class="socialMediaButton" href="https://www.twitter.com" target="_blank"><img src="image/icons8-twitter-bird-24.png" alt="twitter logo"></a>
+            </div>
+        </main>
+        <script src="JS/main.js"></script>
+        <script src="JS/signup.js"></script>
+    </body>
+    </html>
+
+
+    <!-- <div>
+        <input type="password"
+        name="password"id='password'
+        placeholder="name">
+       <LI><labelfor"name"></label></LI>
+    <name="name"gives the fields a name for form submission ></name>
+    <img src="icons8-name-30.png"alt="image">
+    <div>
+        <input type="password"
+        name="password"id='password'
+       placeholder="email">
+        <LI><labelfor"email"></label></LI>
+        <email="email"gives the fields a name for form submission></email>
+        <div>
+            <input type="password"
+            name="password"id='password'
+           placeholder="password">
+           <LI><labelfor"password"></label></LI>
+           <password="password"gives the fields a name for form submission></name></div>
+    </div>
+</div> -->

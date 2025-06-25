@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I am legend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icons8-f-50.png" type="image/x-icon" >
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/trailer.css">
+</head>
+
+<body> 
+    <div class="movie-trailer__container">
+
+        <!-- background -->
+        <div class="video-background">
+            <video autoplay loop playsinline>
+                <source src="videos/i_am_legend.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+
+        <!-- navigation -->
+        <nav class="navigation-bar">
+            <div class="navigation-bar__content">
+                <div class="logo">
+                    <span class="nowrap">
+                        <a href="home.html" class="logo-icon">F</a>
+                        <a href="home.html" class="logo-word">lixPlex</a>
+                    </span>
+                </div>
+                <ul class="navigation-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html#movies">Movies</a></li>
+                    <li><a href="myBookings.html"><span class="nowrap">My Bookings</span></a></li>
+                    <li><a href="home.html#footer"><span class="nowrap">About Us</span></a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <span class=" nowrap">
+                        <button class="btn login-btn" id="login-btn">Login</button>
+                        <button class="btn signUp-btn" id="signUp-btn"><span class="nowrap">Sign up</span></button>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- content -->
+        <div class="content">
+            <div class="about-movie">
+                <span>⭐7.2/10 &nbsp;| &nbsp;Duration: 1h 55m &nbsp;| &nbsp;Horror | Action</span>
+            </div>
+            <h1 class="movie-name">I AM LEGEND</h1>
+
+
+            <p class="movie-description-trailerPage">
+                Robert Neville, a scientist, is the last human survivor of a plague in
+                the whole of New York. He attempts to find a way to reverse the
+                effects of the man-made virus by using his own immune blood.
+            </p>
+
+            <ul class="movieDetails">
+                <li>Release date: January 16, 2008 (Egypt)</li>
+                <li>Language: English</li>
+                <li>Subtitle(s): Arabic</li>
+            </ul>
+            <div class="trailer-buttons">
+                <button type="button" id="i-am-legend-tailer-btn">Full trailer</button>
+                <button type="button" id="i-am-legend-book-now-form-trailer-btn" data-movie="I Am Legend">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+    <script src="JS/iAmLegend.js"></script>
+</body>
+</html>
+

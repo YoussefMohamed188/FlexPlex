@@ -1,0 +1,136 @@
+/* || RESET ||*/ 
+body {
+    padding-bottom: 0 ;
+}
+
+/* || VARIABLES ||*/
+:root {
+    /*colors*/
+    --CLR-TRANSPARENT: rgba(255, 255, 255, 0.001);
+    --CLR-TRANSPARENT-2: rgba(255, 255, 255, 0.652);
+
+    --CLR-MAIN: rgb(0, 10, 33);
+    --CLR-MAIN-TRANSPARENT: rgba(5, 25, 59, 0.91);
+    --CLR-MAIN-TRANSPARENT-2: rgba(5, 25, 59, 0.83);
+    --CLR-MAIN-TRANSPARENT-3: rgba(5, 25, 59, 0.314);   
+
+    
+    --CLR-SECONDARY: rgba(0, 183, 255, 0.776);
+    --CLR-SECONDARY-TRANSPARENT: rgba(0, 183, 255, 0.652);
+
+    --CLR-FONT: white;
+    --CLR-FONT-LIGHT: rgba(255, 255, 255, 0.641);
+    --CLR-FONT-LIGHTER: rgba(255, 255, 255, 0.866);
+    --CLR-FONT-TRANSPARENT: rgba(255, 255, 255, 0.432);
+
+    /*fonts families*/
+    --FF-MAIN: "Fira Sans", sans-serif;
+    --FF-SECONDARY: "Roboto", sans-serif;
+
+    /*gradients*/
+    --CLR-BG: linear-gradient(to bottom, var(--CLR-MAIN), var(--CLR-MAIN-TRANSPARENT), var(--CLR-MAIN));
+    --CLR-NAVBAR: linear-gradient(to right, #ffffff17, #ffffff27, #ffffff17);
+    --CLR-TOP-MOVIES: linear-gradient(to right, var(--CLR-SECONDARY), #81d5f7a6, var(--CLR-SECONDARY));
+    --CLR-TRAILER-BG: linear-gradient(to right,var(--CLR-MAIN-TRANSPARENT-2) 40%, var(--CLR-MAIN-TRANSPARENT-3)100%);
+
+    
+    /*shadow*/
+    --SHADOW: 0px 0px 30px black;
+    --SHADOW-SECONDARY: 0px 0px 30px var(--CLR-SECONDARY);
+
+    --TXT-SHADOW-FONT-CLR: -4px 4px 5px var(--CLR-FONT-TRANSPARENT);
+    --TXT-SHADOW-SECONDARY: -5px 5px 5px var(--CLR-SECONDARY);
+    --TXT-SHADOW-SECONDARY-Transparent: -5px 5px 5px var(--CLR-SECONDARY-TRANSPARENT);
+    --TXT-SHADOW-BLACK: -5px 5px 5px rgba(0, 0, 0, 0.658);
+
+}
+
+/* || FONT || */
+
+.movie-name {
+    font-size: 5rem;
+}
+.about-movie span {
+    font-family: var(--CLR-SECONDARY);
+    color: var(--CLR-FONT-LIGHTER);
+    font-size: 1.5em;
+}
+
+.movie-description-trailerPage {
+    font-size: 1.5em;
+    color: var(--CLR-FONT-LIGHTER);
+}
+
+.movieDetails li {
+    font-family: var(--FF-SECONDARY);
+    color: var(--CLR-FONT-LIGHT);
+}
+
+/* || VIDEO BACKGROUND || */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*video overlay*/
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--CLR-TRAILER-BG); 
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* || COMPONENTS || */
+
+.trailer-buttons button {
+    padding: 5px 20px;
+    border: none;
+}
+.trailer-buttons button:last-child{
+    background: var(--CLR-SECONDARY);
+    color: var(--CLR-FONT);
+    padding: 5px 20px;
+    border: none;
+}
+
+
+
+/* GENARAL STYLES */
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 35%;
+    margin: 6.5rem;
+    z-index: 1;
+}
+.trailer-buttons {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    gap: 10px;
+}
+
+/*** || UTILITY CLASSES || ***/
+
+.nowrap {
+    white-space: nowrap;
+}
+

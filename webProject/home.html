@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Step into a world of adventure, laughter, romance"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="image/icons8-f-50.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>FlixPlex</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- navigation bar -->
+      <nav class="navigation-bar">
+        <div class="navigation-bar__content">
+          <div class="logo">
+            <span class="nowrap" >
+              <a href="#" class="logo-icon">F</a>
+              <a href="#" class="logo-word">lixPlex</a>
+            </span>
+          </div>
+          <ul class="navigation-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li>
+              <a href="myBookings.html"
+                ><span class="nowrap">My Bookings</span></a
+              >
+            </li>
+            <li>
+              <a href="#footer"><span class="nowrap">About Us</span></a>
+            </li>
+          </ul>
+          <div class="auth-buttons">
+            <span class="nowrap">
+              <button class="btn login-btn" id="login-btn">Login</button>
+              <button class="btn signUp-btn" id="signUp-btn">
+                <span class="nowrap">Sign up</span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </nav>
+      <!-- content -->
+      <div class="main">
+        <div class="description">
+          <div class="description-paragraph">
+            <h1 class="description__h1">
+              Your Next Movie Adventure Starts Here
+            </h1>
+            <h2 class="description__h2">
+              Escape Into a World of Cinema Wonder!
+            </h2>
+            <p class="description__p">
+              Step into a world of adventure, laughter, romance, and
+              edge-of-your-seat action. From blockbusters to indie gems. Your
+              next favorite film is just a click away. Book your seat now and
+              let the story begin!
+            </p>
+          </div>
+          <div class="search-container">
+            <input
+              type="text"
+              id="movieSearch"
+              placeholder="Looking for something to watch?"
+              list="searchList"
+            />
+            <button class="searchButton">
+              <img src="image/icons8-search-128.png" alt="search icon" />
+            </button>
+            <datalist id="searchList" >
+  <option value="Bad Boys" ></option>
+  <option value="I Am Legend"></option>
+  <option value="Bloodshot" ></option>
+  <option value="Interceptor"></option>
+</datalist>
+          </div>
+        </div>
+
+        <div class="top-movies">
+          <h3>
+            <span class="nowrap">Top Movies</span>
+          </h3>
+        </div>
+
+        <div id="movies" class="movies-section">
+          <!--Bad Boys-->
+          <div id="Bad_Boys" class="movie-card">
+            <div class="movie-card__content">
+              <span class="rank-icon">1</span>
+              <a href="Bad_Boys.html">
+                <img
+                  src="image/BadBoys.jpg"
+                  alt="BadBoys logo"
+                  title="Bad Boys logo"
+                  width="500"
+                  loading="lazy"
+                />
+                <div class="movie-title">
+                  Bad Boys
+                  <span class="movie-tags nowrap">⭐ 8.7 | Action | Crime</span>
+                </div>
+                <p class="movie-description">
+                  This Summer, the world's favorite Bad Boys are back with their
+                  iconic mix of edge-of-your seat action and outrageous comedy
+                  but this time with a twist: Miami's finest are now on the run.
+                </p>
+              </a>
+              <button type="button" id="bad-boys-btn" data-movie="Bad Boys">
+                Book Now
+              </button>
+            </div>
+          </div>
+
+          <!--i_am_legend-->
+          <div id="i_am_legend" class="movie-card">
+            <div class="movie-card__content">
+              <span class="rank-icon">2</span>
+              <a href="i_am_legend.html">
+                <img
+                  src="image/iAmLegend.jpeg"
+                  alt="i_am_legend logo"
+                  title="i_am_legend logo"
+                  width="500"
+                  loading="lazy"
+                />
+                <div class="movie-title">
+                  I Am Legend
+                  <span class="movie-tags nowrap"
+                    >⭐ 7.2 | Horror | Action</span
+                  >
+                </div>
+                <p class="movie-description">
+                  Robert Neville, a scientist, is the last human survivor of a
+                  plague in the whole of New York. He attempts to find a way to
+                  reverse the effects of the man-made virus by using his own
+                  immune blood.
+                </p>
+              </a>
+              <button
+                type="button"
+                id="i-am-legend-btn"
+                data-movie="I Am Legend"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+
+          <!--Bloodshot-->
+          <div id="Bloodshot" class="movie-card">
+            <div class="movie-card__content">
+              <span class="rank-icon">3</span>
+              <a href="Blood_Shot.html">
+                <img
+                  src="image/Bloodshot.jpg"
+                  alt="Bloodshot logo"
+                  title="Bloodshot logo"
+                  width="500"
+                  loading="lazy"
+                />
+                <p class="movie-title">
+                  Bloodshot
+                  <span class="movie-tags nowrap"
+                    >⭐ 6.8 | Action | Sci-fi</span
+                  >
+                </p>
+                <p class="movie-description">
+                  Ray Garrison, an elite soldier killed in battle, is
+                  resurrected and given superhuman abilities.
+                </p>
+              </a>
+              <button type="button" id="bloodshot-btn" data-movie="Bloodshot">
+                Book Now
+              </button>
+            </div>
+          </div>
+
+          <!--Interceptor-->
+          <div id="Interceptor" class="movie-card">
+            <div class="movie-card__content">
+              <span class="rank-icon">4</span>
+              <a href="Interceptor.html" target="_self">
+                <img
+                  src="image/Interceptor.jpg"
+                  alt="Interceptor logo"
+                  title="Interceptor logo"
+                  width="500"
+                  loading="lazy"
+                />
+                <p class="movie-title">
+                  Interceptor
+                  <span class="movie-tags nowrap"
+                    >⭐ 7.5 | Action | Thriller</span
+                  >
+                </p>
+                <p class="movie-description">
+                  Meet the world's last defense. One Army captain must use her
+                  years of tactical training and military expertise when a
+                  simultaneous coordinated attack threatens the remote missile
+                  interceptor station.
+                </p>
+              </a>
+              <button
+                type="button"
+                id="interceptor-btn"
+                data-movie="Interceptor"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Us -->
+      <footer id="footer">
+        <div class="footer-content">
+          <div class="logo-and-social-media">
+            <span class="nowrap">
+              <a href="#" class="logo-icon">F</a>
+              <a href="#" class="logo-word">lixPlex</a>
+            </span>
+            <div class="flixplex-social-media">
+              <a
+                class="socialMediaButton"
+                href="https://www.facebook.com"
+                target="_blank"
+                ><img src="image/icons8-facebook-24.png" alt="facebook logo"
+              /></a>
+              <a
+                class="socialMediaButton"
+                href="https://www.instagram.com"
+                target="_blank"
+                ><img src="image/icons8-instagram-24.png" alt="instagram icon"
+              /></a>
+              <a
+                class="socialMediaButton"
+                href="https://www.twitter.com"
+                target="_blank"
+                ><img src="image/icons8-twitter-bird-24.png" alt="twitter logo"
+              /></a>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-main-content">
+            <div class="footer-column">
+              <p class="footer-column__title">About</p>
+              <ul>
+                <li><a href="">About Us</a></li>
+                <li>
+                  <a href=""
+                    ><abbr
+                      title="Frequently Asked Questions"
+                      style="text-decoration: none"
+                      >FAQ</abbr
+                    ></a
+                  >
+                </li>
+                <li><a href="">FlixPlex Branches</a></li>
+                <li><a href="">Contact US</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">Support</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <p class="footer-column__title">Help & Support</p>
+              <ul>
+                <li><a href="">Refunds</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms And Conditions</a></li>
+                <li><a href="">Privacy Center</a></li>
+                <li><a href="">Cookies Settings</a></li>
+                <li><a href="">Terms of use</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <p class="footer-column__title">Explore Our Site</p>
+              <ul>
+                <li><a href="">What's On</a></li>
+                <li><a href="">Coming Soon</a></li>
+                <li><a href="">Food Menus</a></li>
+                <li><a href="">Pre-Order Online</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <p class="footer-column__title">Team Members</p>
+              <ul>
+                <li><p>Nancy Mahmoud Wagdy - 2302690</p></li>
+                <li><p>Ghada Elsayed Elswefy - 2300493</p></li>
+                <li><p>Ahmed Khaled Mohamed - 2302610</p></li>
+                <li><p>youssef Mohamed Ramadan - 2302497</p></li>
+                <li><p>Amr Mohamed Mahmoud - 2300862</p></li>
+                <li><p>Mahmoud Mohamed Mahmoud- 2302041</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          &copy 2025 FlixPlex Cinemas. All rights reserved.
+        </p>
+      </footer>
+    </div>
+    <script src="JS/main.js"></script>
+    <script src="JS/home.js"></script>
+  </body>
+</html>

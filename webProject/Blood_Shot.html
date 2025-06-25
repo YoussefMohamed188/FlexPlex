@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bloodshot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icons8-f-50.png" type="image/x-icon" >
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/trailer.css">
+    <link rel="stylesheet" href="css/badBoys.css">
+</head>
+
+<body> 
+    <div class="movie-trailer__container">
+
+        <!-- background -->
+        <div class="video-background">
+            <video autoplay loop playsinline>
+                <source src="videos/BloodShot.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+
+        <!-- navigation -->
+        <nav class="navigation-bar">
+            <div class="navigation-bar__content">
+                <div class="logo">
+                    <span class="nowrap">
+                        <a href="home.html" class="logo-icon">F</a>
+                        <a href="home.html" class="logo-word">lixPlex</a>
+                    </span>
+                </div>
+                <ul class="navigation-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html#movies">Movies</a></li>
+                    <li><a href="myBookings.html"><span class="nowrap">My Bookings</span></a></li>
+                    <li><a href="home.html#footer"><span class="nowrap">About Us</span></a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <span class=" nowrap">
+                        <button class="btn login-btn" id="login-btn">Login</button>
+                        <button class="btn signUp-btn" id="signUp-btn"><span class="nowrap">Sign up</span></button>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- content -->
+        <div class="content">
+            <div class="about-movie">
+                <span>⭐6.8/10 &nbsp;| &nbsp;Duration: 1h 49m &nbsp;| &nbsp;Action | Sci-fi</span>
+            </div>
+            <h1 class="movie-name">BLOODSHOT</h1>
+
+
+            <p class="movie-description-trailerPage">
+                Ray Garrison, an elite soldier killed in battle, is resurrected and given superhuman abilities.
+            </p>
+
+            <ul class="movieDetails">
+                <li>Release date: March 13, 2020 (USA)</li>
+                <li>Language: English</li>
+                <li>Subtitle(s): Arabic</li>
+            </ul>
+            <div class="trailer-buttons">
+                <button type="button" id="bloodshot-trailer-btn">Full trailer</button>
+                <button type="button" id="bloodshot-book-now-form-trailer-btn" data-movie="Bloodshot">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/bloodshot.js"></script>
+</body>
+</html>
+

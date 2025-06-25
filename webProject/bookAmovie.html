@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking</title>
+    <link rel="icon" href="image/icons8-f-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/BookAMovie.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ </head>
+ <body>
+  <nav class="navigation-bar">
+    <div class="navigation-bar__content">
+        <div class="logo">
+            <span class="nowrap">
+                <a href="home.html" class="logo-icon">F</a>
+                <a href="home.html" class="logo-word">lixPlex</a>
+            </span>
+        </div>
+        <ul class="navigation-items">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#movies">Movies</a></li>
+            <li><a href="myBookings.html"><span class="nowrap">My Bookings</span></a></li>
+            <li><a href="home.html#footer"><span class="nowrap">About Us</span></a></li>
+        </ul>
+        <div class="auth-buttons">
+            <span class="nowrap">
+                <button class="btn login-btn" id="login-btn">Login</button>
+                <button class="btn signUp-btn" id="signUp-btn"><span class="nowrap">Sign up</span></button>
+            </span>
+        </div>
+    </div>
+  </nav>
+  
+  <div class="booking-title-div">
+    <h1 class="booking-title">Book Your Ticket</h1>
+  </div>
+  
+  <div class="main" id="main">
+    <div class="ticket-seat-container">
+      
+      <div class="section seat-selection">
+        <h2 class="booking-title">Select seats</h2>
+        <div class="movie-container">
+          <label>Movie:</label>
+          <select id="movie">
+            <option value="16">Bloodshot (16$)</option>
+            <option value="10">Bad Boys (10$)</option>
+            <option value="14">I Am Legend (14$)</option>
+            <option value="20">Interceptor (20$)</option>
+          </select>
+        </div>
+        <ul class="showcase">
+          <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+          </li>
+          <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+          </li>
+          <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+          </li>
+        </ul>
+        <div class="container">
+          <div class="screen"></div>
+          <div class="row">
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+          </div>
+        </div>
+        <p class="text">
+          You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
+        </p>
+      </div>
+      <form class="section booking-form-container" id="formS">
+        <div class="section-heading">
+          <h2 class="booking-title">Ticket Details</h2>
+          <div class="movie-name">
+            <span>Movie:</span>
+            <span id="selected-movie">movie name</span>
+          </div>
+        </div>
+        <div class="form-container">
+          <form action="confirmation.html" method="POST">
+            <div class="form-fields">
+              <div class="form-group branches">
+                <label for="seat">Branch: </label>
+                <select name="seat" id="branch" required>
+                  <option value="" disabled selected>Select branch</option>
+                  <option value="Cairo">Cairo</option>
+                  <option value="Alexandria">Alexandria</option>
+                </select>
+              </div>  
+              <div class="form-group">
+                <label for="date">Day:</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+              <div class="form-group Time">
+                <label for="time">Time: </label>
+                <select name="time" id="time" required>
+                  <option value="" disabled selected>Select time</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="15:00">03:00 PM</option>
+                  <option value="18:00">06:00 PM</option>
+                  <option value="21:00">09:00 PM</option>
+                </select>
+              </div>
+              <div class="form-group seatType">
+                <label for="seat-type">Seat Type: </label>
+                <select name="seat-type" id="seat-type" required>
+                  <option value="" disabled selected>Select seat type</option>
+                  <option value="Standard">Standard</option>
+                  <option value="VIP">VIP</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="confirm-booking-btn">Confirm Booking</button>
+            </div>
+          </form>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="formD" class="booking">
+<h1>
+
+</h1>
+  </div>
+  <script src="js/form.js"></script>
+  <script src="JS/main.js"></script>
+  <script src="JS/bookAMovie.js"></script>
+ </body>
+</html>

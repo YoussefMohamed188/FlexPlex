@@ -1,0 +1,154 @@
+::placeholder{color: rgba(255, 255, 255, 0.616);}
+:root {
+    /*colors*/
+    --CLR-TRANSPARENT: rgba(255, 255, 255, 0.1);
+    --CLR-TRANSPARENT-2: rgba(255, 255, 255, 0.652);
+
+    --CLR-MAIN: rgb(0, 10, 33);
+    --CLR-MAIN-dark: rgba(0, 8, 27, 0.267);
+    --CLR-MAIN-TRANSPARENT: rgba(5, 25, 59, 0.91);
+
+    --CLR-SECONDARY: #00b7ffc6;
+    --CLR-SECONDARY-TRANSPARENT: rgba(0, 183, 255, 0.652);
+
+    --CLR-FONT: white;
+    --CLR-FONT-LIGHT: rgba(255, 255, 255, 0.641);
+    --CLR-FONT-LIGHTER: rgba(13, 11, 11, 0.866);
+    --CLR-FONT-TRANSPARENT: rgba(255, 255, 255, 0.432); 
+
+    /*gradients*/
+    --CLR-BG: linear-gradient(to bottom, var(--CLR-MAIN), var(--CLR-MAIN-TRANSPARENT), var(--CLR-MAIN));
+    --CLR-NAVBAR: linear-gradient(to right, #ffffff17, #ffffff27, #ffffff17);
+    --CLR-TOP-MOVIES: linear-gradient(to right, var(--CLR-SECONDARY), #81d5f7a6, var(--CLR-SECONDARY));
+
+    /*fonts families*/
+    --FF-MAIN: "Fira Sans", sans-serif;
+    --FF-SECONDARY: "Roboto", sans-serif;
+
+    /*shadow*/
+    --SHADOW: 0px 0px 30px black;
+    --SHADOW-SECONDARY: 0px 0px 30px var(--CLR-SECONDARY);
+
+    --TXT-SHADOW-FONT-CLR: -4px 4px 5px var(--CLR-FONT-TRANSPARENT);
+    --TXT-SHADOW-SECONDARY: -5px 5px 5px var(--CLR-SECONDARY);
+    --TXT-SHADOW-SECONDARY-Transparent: -5px 5px 5px var(--CLR-SECONDARY-TRANSPARENT);
+    --TXT-SHADOW-BLACK: -5px 5px 5px rgba(0, 0, 0, 0.658);
+}
+:root {
+  --CLR-BG: linear-gradient(to bottom, var(--CLR-MAIN), var(--CLR-MAIN-TRANSPARENT), var(--CLR-MAIN));
+  --CLR-FONT: white;
+  --CLR-FONT-LIGHT: rgba(255, 255, 255, 0.641);
+
+}
+
+
+/*.light-mode {
+  --CLR-MAIN: rgba(85, 81, 81, 0.456);
+  --CLR-MAIN-TRANSPARENT: rgba(240, 240, 240, 0.91);
+  --CLR-MAIN-TRANSPARENT-2: rgba(240, 240, 240, 0.83);
+  --CLR-MAIN-TRANSPARENT-3: rgba(240, 240, 240, 0.314);
+
+  --CLR-FONT: #000;
+  --CLR-FONT-LIGHT: rgba(10, 60, 107, 0.6);
+  --CLR-BG: linear-gradient(to bottom, var(--CLR-MAIN), #456bb6);
+ 
+}*/
+
+h1 {
+  text-align: center;
+  color: var(--FF-MAIN);
+  text-shadow: var(--TXT-SHADOW-BLACK);
+
+}
+
+body {
+  font-family: var(--FF-SECONDARY);
+  margin: 0;
+  padding: 0;
+  color: var(--CLR-FONT);
+  transition: .4s;
+}
+
+
+
+button:hover {
+  background-color: var(--CLR-TRANSPARENT-2);
+}
+
+#confirmation-message {
+  margin-top: 20px;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+.booking {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.023);
+  box-shadow:var(--SHADOW) ;
+  margin: 20px auto;
+  max-width: 700px;
+  
+}
+#EditTime {
+  display: flex;
+  flex-direction: column;
+}
+.booking label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: var(--CLR-FONT);
+}
+.booking input {
+  font-size: 15px;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  border-bottom:2px solid var(--CLR-SECONDARY-TRANSPARENT);
+  color: var(--CLR-FONT);
+  background-color: transparent;
+  border-bottom: 3px solid var();
+}
+.booking input:focus {
+
+  border-bottom: 3px solid var(--CLR-FONT);
+  box-shadow: var(--SHADOW-SECONDARY);
+  background-color: var(--CLR-SECONDARY-TRANSPARENT);
+  transition: .4s;
+}
+.booking button {
+  width: 30%;
+  padding: 12px;
+  background:radial-gradient(var(--CLR-SECONDARY),rgb(190, 186, 186)) ;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px auto;
+  transition: 1s all;
+}
+.booking button:hover {
+  background:radial-gradient(var(--CLR-MAIN-TRANSPARENT),rgb(3, 2, 2)) ;
+  box-shadow: 0px 0px 20px #000;
+  transform: scale(1.05);
+}
+.btns{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.btns button:nth-child(1){
+  background: var(--CLR-SECONDARY);
+}
+.btns button:nth-child(2){
+  background:radial-gradient(#992a2a) ;
+}

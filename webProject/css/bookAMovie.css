@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #242333;
+    font-size: 0.9em;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Sans" ;
+    overflow: hidden;
+  }
+  :root {
+  --CLR-BG: linear-gradient(to bottom, var(--CLR-MAIN), var(--CLR-MAIN-TRANSPARENT), var(--CLR-MAIN));
+  --CLR-FONT: white;
+  --CLR-FONT-LIGHT: rgba(255, 255, 255, 0.641);
+
+}
+
+
+.light-mode {
+  --CLR-MAIN: rgb(240, 240, 240);
+  --CLR-MAIN-TRANSPARENT: rgba(240, 240, 240, 0.91);
+  --CLR-MAIN-TRANSPARENT-2: rgba(240, 240, 240, 0.83);
+  --CLR-MAIN-TRANSPARENT-3: rgba(240, 240, 240, 0.314);
+
+  --CLR-FONT: #000;
+  --CLR-FONT-LIGHT: rgba(10, 60, 107, 0.6);
+  --CLR-BG: linear-gradient(to bottom, var(--CLR-MAIN), #456bb6);
+ 
+}
+
+  .seat {
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .row{
+    display: flex;
+  }
+
+  .movie-container {
+    margin: 20px ;
+  }
+
+  .movie-container select {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .seat.selected{
+   background-color: #6feaf6;
+  }
+
+  .seat.occupied{
+    background-color: #fff;
+  }
+
+  .seat:nth-of-type(2){
+    margin-right: 18px;
+  }
+
+  .seat:nth-last-of-type(2){
+    margin-left: 18px;
+  }
+
+  .seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .showcase .seat:not(.occupied):hover{
+   cursor: default;
+   transform: scale(1);
+  }
+
+  .showcase{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+
+  .showcase li small {
+    margin-left: 10px;
+  }
+
+  .screen{
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+  }
+
+  .container{
+    perspective: 1000px;
+    margin-bottom: 30px;
+  }
+
+  p.text{
+    margin: 5px 0;
+  }
+  p.text span {
+    color: #6feaf6;
+  }
+
+  /*new edits*/
+.booking-title-div h1{
+  margin: 1rem 0;
+  text-align: center;
+}
+.booking-title-div{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.seat-selection{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main{
+    /*overriding the main container*/
+    font-family: "Fira Sans" ;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;    
+    gap: 2rem;
+  }
+
+  .ticket-seat-container{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    width: 40%;
+    min-width: fit-content;
+    height: 50%;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px black;
+
+  }
+  
+  .booking-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    background: rgba(255, 255, 255, 0.084);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.237);
+    border-radius: 12px;
+}
+
+.section {
+  padding: 1rem;
+}
+
+.section .booking-title{
+  font-size: 2.1em;
+  text-shadow: none;
+}
+.section .booking-title{
+  font-size: 2.1em;
+  text-shadow: -1.5px 1.5px 3px rgba(0, 0, 0, 0.434);
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 5rem;
+}
+
+.confirm-booking-btn {
+  background-color: #00b7ffc6;
+  border: none;
+  color: white;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.form-group label {
+  width: 100px; 
+  font-weight: 500;
+}
+.form-container {
+  margin-top: 1.5rem;
+}
+.form-group select,
+.form-group input[type="date"] {
+  flex: 1;
+}
+
+.form-container form .form-fields div label ,
+.form-container form .form-fields div span {
+  font-family: "Roboto";
+}
+
+.section-heading {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.movie-name {
+font-size: 1.1em;
+background: rgba(0, 8, 27, 0.115);
+border-radius: 5px;
+padding: 5px 12px;
+color: rgba(255, 255, 255, 0.841);
+}
+
+/*dropdown menus*/
+.form-container select ,
+.form-container input {
+  background-color: rgba(255, 255, 255, 0.897);
+  font-family: "Roboto";
+  border-radius: 5px;
+  margin: 0 2px;
+  border: none;
+  padding: 3px 7px;
+  outline-color: #00b7ffc6;
+;
+
+}
+
+@media screen and (max-width: 450px){
+  body {
+    overflow: scroll;
+  }
+  .ticket-seat-container{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .ticket-seat-container{
+    background: none;
+    box-shadow: none;
+  }
+  .booking-form-container{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .auth-buttons{
+    display: none;
+  }
+}
